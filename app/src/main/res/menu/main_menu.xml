@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_start"
+            android:icon="@drawable/start_icon"
+            android:title="Start" />
+        <item
+            android:id="@+id/nav_ustawienia"
+            android:icon="@drawable/config_logo"
+            android:title="Ustawienia" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Profil">
+
+            <menu>
+
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/login_icon"
+                    android:title="Login" />
+
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/profil_icon"
+                    android:title="Profil" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout_icon"
+                    android:title="Wylogowanie" />
+
+            </menu>
+
+
+        </item>
+
+    </group>
+
+    <item android:title="Komunikacja">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_share"
+                android:title="Udostępnij wynik"
+                android:icon="@drawable/share_icon"/>
+
+        </menu>
+
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_wyjscie"
+            android:icon="@drawable/exit_logo"
+            android:title="Wyjscie" />
+    </group>
+
+</menu>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab</string>
+    <string name="navigation_drawer_open">Otwórz nawigacje</string>
+    <string name="navigation_drawer_close">Zamknij nawigacje</string>
+</resources>
