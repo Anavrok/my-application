@@ -1,4 +1,4 @@
-package com.taimoor.myapplication;
+package com.taimoor.projekt_labirynt;
 
 import org.junit.Test;
 

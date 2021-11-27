@@ -1,4 +1,4 @@
-package com.taimoor.myapplication;
+package com.taimoor.projekt_labirynt;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.taimoor.myapplication", appContext.getPackageName());
+        assertEquals("com.taimoor.projekt_labirynt", appContext.getPackageName());
     }
 }
