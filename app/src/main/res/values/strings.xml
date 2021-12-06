@@ -3,4 +3,7 @@
 
     <string name="navigation_drawer_open">Otwórz boczne menu</string>
     <string name="navigation_drawer_close">Zamknij boczne menu</string>
+
+    <string name="graj">Graj</string>
+    <string name="narzedzia">Narzędzia</string>
 </resources>

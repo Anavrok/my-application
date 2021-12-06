@@ -1,8 +1,11 @@
 package com.taimoor.projekt_labirynt;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -11,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -23,10 +28,36 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
+
+        // button_narzedzia start
+        Button button_narzedzia = findViewById(R.id.button_narzedzia);
+        button_narzedzia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, narzedzia.class);
+                startActivity(intent);
+            }
+        });
+        // button_narzedzia end
+
+        // button_graj start
+        Button button_graj = findViewById(R.id.button_graj);
+        button_graj.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, graj.class);
+                startActivity(intent);
+            }
+        });
+        // button_graj end
+
+
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         drawer = findViewById(R.id.drawer_layout);
+
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
@@ -56,6 +87,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_profile:
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, new profilefragment()).commit();
                 break;
+            case R.id.nav_login:
+                loginfragment_act();
+                break;
             case R.id.nav_share:
                 Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
         }
@@ -72,6 +106,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         else {
             super.onBackPressed();
         }
+    }
+
+    public void loginfragment_act(){
+        Intent intent = new Intent(this, loginfragment_act.class);
+        startActivity(intent);
+    }
+
+    public void profilefragment_act(){
+        Intent intent = new Intent(this, profilefragment_act.class);
+        startActivity(intent);
     }
 
 
