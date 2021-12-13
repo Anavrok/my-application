@@ -53,7 +53,7 @@ public class Natezenie extends AppCompatActivity {
             @Override
             public void onSensorChanged(SensorEvent sensorEvent) {
                 float value = sensorEvent.values[0];
-                getSupportActionBar().setTitle("Luminosity : " + value + " lx");
+                getSupportActionBar().setTitle("Natężenie światła : " + value + " lx");
 
                 // between 0 and 255
                 int newValue = (int) (255f * value / maxValue);

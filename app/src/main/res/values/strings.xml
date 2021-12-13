@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"> </string>
+    <string name="app_name"></string>
 
     <string name="navigation_drawer_open">Otwórz boczne menu</string>
     <string name="navigation_drawer_close">Zamknij boczne menu</string>
