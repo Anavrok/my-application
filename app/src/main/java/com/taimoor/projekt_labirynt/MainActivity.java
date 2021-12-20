@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, new configfragment()).commit();
                 break;
             case R.id.nav_profile:
-                getFragmentManager().beginTransaction().replace(R.id.fragment_container, new profilefragment()).commit();
+                profilefragment_act();
                 break;
             case R.id.nav_login:
                 loginfragment_act();
@@ -109,12 +109,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void loginfragment_act(){
-        Intent intent = new Intent(this, loginfragment_act.class);
+        Intent intent = new Intent(this, Login.class);
         startActivity(intent);
     }
 
     public void profilefragment_act(){
-        Intent intent = new Intent(this, profilefragment_act.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 

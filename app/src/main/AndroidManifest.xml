@@ -13,44 +13,44 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Projekt_labirynt">
         <activity
-            android:name=".loginfragment_act"
-            android:keepScreenOn="true"
-            android:exported="false" />
-        <activity
-            android:name=".profilefragment_act"
-            android:keepScreenOn="true"
-            android:exported="false" />
-        <activity
             android:name=".graj"
-            android:keepScreenOn="true"
-            android:exported="false" />
+            android:exported="false"
+            android:keepScreenOn="true" />
         <activity
             android:name=".narzedzia"
-            android:keepScreenOn="true"
-            android:exported="false" />
+            android:exported="false"
+            android:keepScreenOn="true" />
         <activity
             android:name=".Barometr"
-            android:keepScreenOn="true"
-            android:exported="false" />
+            android:exported="false"
+            android:keepScreenOn="true" />
         <activity
             android:name=".Jasnosc"
-            android:keepScreenOn="true"
-            android:exported="false" />
+            android:exported="false"
+            android:keepScreenOn="true" />
         <activity
             android:name=".Kompas"
-            android:keepScreenOn="true"
-            android:exported="false" />
+            android:exported="false"
+            android:keepScreenOn="true" />
         <activity
             android:name=".Natezenie"
             android:exported="false" />
         <activity
             android:name=".Menu"
-            android:keepScreenOn="true"
-            android:exported="false" />
+            android:exported="false"
+            android:keepScreenOn="true" />
+        <activity
+            android:name=".Login"
+            android:exported="false"
+            android:keepScreenOn="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:keepScreenOn="true" />
         <activity
             android:name=".MainActivity"
-            android:keepScreenOn="true"
             android:exported="true"
+            android:keepScreenOn="true"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

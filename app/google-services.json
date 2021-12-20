@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "340118775589",
+    "project_id": "signin-d7db4",
+    "storage_bucket": "signin-d7db4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340118775589:android:8f6c81c53d86e168421ccc",
+        "android_client_info": {
+          "package_name": "com.taimoor.projekt_labirynt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340118775589-du7kummjfj859huc4967d2bajc6adns0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taimoor.projekt_labirynt",
+            "certificate_hash": "b7642d84f5aea243043ec9b70d25687eb8204903"
+          }
+        },
+        {
+          "client_id": "340118775589-s1mh47v4inaqdf9kp85dq1dauf8t87t2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBqnPqaya525-xjD5oBcZrZhHLxcmNPwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340118775589-s1mh47v4inaqdf9kp85dq1dauf8t87t2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

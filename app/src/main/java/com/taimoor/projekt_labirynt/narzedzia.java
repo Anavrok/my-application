@@ -59,7 +59,18 @@ public class narzedzia extends AppCompatActivity {
         });
         // 4button end
 
-        // 5 button_powrot start
+        // 5 button start
+        Button button5 = findViewById(R.id.Button_logowanie);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(narzedzia.this, Login.class);
+                startActivity(intent);
+            }
+        });
+        // 5 button end
+
+        // 6 button_powrot start
         Button button_powrot = findViewById(R.id.button_powrot);
         button_powrot.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,7 +79,8 @@ public class narzedzia extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        // 5 button_powrot end
+        // 6 button_powrot end
+
 
     }
 }
