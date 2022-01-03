@@ -70,7 +70,18 @@ public class narzedzia extends AppCompatActivity {
         });
         // 5 button end
 
-        // 6 button_powrot start
+        // 6 button start
+        Button button6 = findViewById(R.id.button_mapa);
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(narzedzia.this, Mapa.class);
+                startActivity(intent);
+            }
+        });
+        // 6 button end
+
+        // 7 button_powrot start
         Button button_powrot = findViewById(R.id.button_powrot);
         button_powrot.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,7 +90,9 @@ public class narzedzia extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        // 6 button_powrot end
+        // 7 button_powrot end
+
+
 
 
     }

@@ -8,19 +8,19 @@
     tools:context=".narzedzia">
 
     <Button
-        android:id="@+id/Button_logowanie"
+        android:id="@+id/button_mapa"
         android:layout_width="240dp"
         android:layout_height="80dp"
         android:backgroundTint="#000000"
-        android:text="Logowanie"
+        android:text="Mapa"
         android:textSize="24sp"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.749" />
+        app:layout_constraintVertical_bias="0.757" />
 
     <Button
         android:id="@+id/button_powrot"
@@ -38,6 +38,51 @@
         app:layout_constraintVertical_bias="0.917" />
 
     <Button
+        android:id="@+id/button"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#000000"
+        android:text="Barometr"
+        android:textSize="24sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#000000"
+        android:text="Kompas"
+        android:textSize="24sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <Button
+        android:id="@+id/Button_logowanie"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#000000"
+        android:text="Logowanie"
+        android:textSize="24sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <Button
         android:id="@+id/button4"
         android:layout_width="240dp"
         android:layout_height="80dp"
@@ -47,55 +92,25 @@
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.600" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="240dp"
-        android:layout_height="80dp"
-        android:backgroundTint="#000000"
-        android:textSize="24sp"
-        app:cornerRadius="20dp"
-        android:text="Kompas"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.450" />
+        app:layout_constraintVertical_bias="0.474" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="240dp"
         android:layout_height="80dp"
         android:backgroundTint="#000000"
-        android:textSize="24sp"
-        app:cornerRadius="20dp"
         android:text="Jasność"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.300" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="240dp"
-        android:layout_height="80dp"
-        android:backgroundTint="#000000"
         android:textSize="24sp"
         app:cornerRadius="20dp"
-        android:text="Barometr"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.150" />
+        app:layout_constraintVertical_bias="0.173" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
