@@ -11,12 +11,17 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -51,6 +56,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         });
         // button_graj end
 
+        final AppCompatButton signOutBtn = findViewById(R.id.button_wyloguj);
+
+        GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
+
+        GoogleSignInClient googleSignInClient = GoogleSignIn.getClient(this, googleSignInOptions);
+
+        GoogleSignInAccount googleSignInAccount = GoogleSignIn.getLastSignedInAccount(this);
+
+        signOutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                googleSignInClient.signOut();
+
+                startActivity(new Intent(MainActivity.this, Login.class));
+                finish();
+            }
+        });
 
 
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -79,19 +103,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, new mainfragment()).commit();
                 break;
             case R.id.nav_start:
-                getFragmentManager().beginTransaction().replace(R.id.fragment_container, new startfragment()).commit();
+                GameView();
                 break;
-            case R.id.nav_config:
+            case R.id.nav_inf:
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, new configfragment()).commit();
                 break;
             case R.id.nav_profile:
                 profilefragment_act();
                 break;
-            case R.id.nav_login:
+            case R.id.nav_new:
                 loginfragment_act();
                 break;
-            case R.id.nav_share:
-                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+            case R.id.nav_credits:
+                Toast.makeText(this, "Autorzy: Adamczyk Mateusz i Cetera Maciej", Toast.LENGTH_SHORT).show();
         }
 
         drawer.closeDrawer(GravityCompat.START);
@@ -118,6 +142,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(intent);
     }
 
+    public void GameView(){
+        Intent intent = new Intent(this, graj.class);
+        startActivity(intent);
+    }
 
 
 }

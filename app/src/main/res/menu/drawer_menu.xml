@@ -13,11 +13,11 @@
         <item
             android:id="@+id/nav_start"
             android:icon="@drawable/start_icon"
-            android:title="Start" />
+            android:title="Start Gry" />
         <item
-            android:id="@+id/nav_config"
-            android:icon="@drawable/config_logo"
-            android:title="Ustawienia" />
+            android:id="@+id/nav_inf"
+            android:icon="@drawable/inf_icon"
+            android:title="O Aplikacji" />
     </group>
 
    <item android:title="Komunikacja">
@@ -27,17 +27,13 @@
                 android:icon="@drawable/profil_icon"
                 android:title="Profil" />
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/share_icon"
-                android:title="Udostępnij" />
+                android:id="@+id/nav_new"
+                android:icon="@drawable/nowosci_icon"
+                android:title="Nowości" />
             <item
-                android:id="@+id/nav_login"
-                android:icon="@drawable/login_icon"
-                android:title="Zaloguj się" />
-            <item
-                android:id="@+id/nav_logout"
-                android:icon="@drawable/logout_icon"
-                android:title="Wyloguj" />
+                android:id="@+id/nav_credits"
+                android:icon="@drawable/autorzy_icon"
+                android:title="Autorzy" />
         </menu>
     </item>
 

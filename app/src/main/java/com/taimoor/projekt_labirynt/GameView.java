@@ -7,8 +7,12 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -17,9 +21,12 @@ import java.util.Stack;
 public class GameView extends View {
 
 
+    private Context context;
+
     private enum Direction{
         UP, DOWN, LEFT, RIGHT
     }
+
 
     private Cell[][] cells;
     private Cell player, exit;
@@ -231,7 +238,7 @@ public class GameView extends View {
           //  if(licznik_col%2==0 && licznik_col <= 8) {
                 COLS++;
           //  }
-            ROWS++;
+            ROWS=ROWS+2;
             licznik_col++;
             punkty++;
             createMaze();
