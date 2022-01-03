@@ -16,21 +16,25 @@ import java.util.Stack;
 
 public class GameView extends View {
 
+
     private enum Direction{
         UP, DOWN, LEFT, RIGHT
     }
 
     private Cell[][] cells;
     private Cell player, exit;
-    private static final int COLS = 6, ROWS = 10;
+    private static int COLS = 6, ROWS = 12;
     private static final float WALL_THICKNESS = 4;
     private float cellSize, hMargin, vMargin;
     private Paint wallPaint, playerPaint, exitPaint;
     private Random random;
+    private static float licznik_col = 0;
+    private  static float punkty = 0;
 
 
     public GameView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
+
 
         wallPaint = new Paint();
         wallPaint.setColor(Color.BLACK);
@@ -223,8 +227,15 @@ public class GameView extends View {
     }
 
     private void checkExit(){
-        if(player == exit)
+        if(player == exit) {
+          //  if(licznik_col%2==0 && licznik_col <= 8) {
+                COLS++;
+          //  }
+            ROWS++;
+            licznik_col++;
+            punkty++;
             createMaze();
+        }
     }
 
     @Override

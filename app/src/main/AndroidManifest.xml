@@ -55,7 +55,7 @@
             android:keepScreenOn="true" />
         <activity
             android:name=".Login"
-            android:exported="false"
+            android:exported="true"
             android:keepScreenOn="true" />
         <activity
             android:name=".HomeActivity"

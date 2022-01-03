@@ -27,6 +27,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        getSupportActionBar().hide();
         final ImageView signInBtn = findViewById(R.id.signInBtn);
 
         GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -38,7 +39,7 @@ public class Login extends AppCompatActivity {
         GoogleSignInAccount googleSignInAccount = GoogleSignIn.getLastSignedInAccount(this);
 
         if (googleSignInAccount != null){
-            startActivity(new Intent(Login.this, HomeActivity.class));
+            startActivity(new Intent(Login.this, MainActivity.class));
             finish();
         }
 
@@ -69,7 +70,7 @@ public class Login extends AppCompatActivity {
             final String getEmail = account.getEmail();
             final Uri getPhotoUrl = account.getPhotoUrl();
 
-            startActivity(new Intent(Login.this, HomeActivity.class));
+            startActivity(new Intent(Login.this, MainActivity.class));
             finish();
         } catch (ApiException e) {
             e.printStackTrace();
