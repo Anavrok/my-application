@@ -37,13 +37,4 @@
         </menu>
     </item>
 
-    <item android:title="Wyjście">
-        <menu>
-            <item
-                android:id="@+id/nav_exit"
-                android:icon="@drawable/exit_logo"
-                android:title="Wyjście" />
-        </menu>
-    </item>
-
 </menu>

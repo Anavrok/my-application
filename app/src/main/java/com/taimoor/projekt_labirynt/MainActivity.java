@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 profilefragment_act();
                 break;
             case R.id.nav_new:
-                loginfragment_act();
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container, new nowoscifragment()).commit();
                 break;
             case R.id.nav_credits:
                 Toast.makeText(this, "Autorzy: Adamczyk Mateusz i Cetera Maciej", Toast.LENGTH_SHORT).show();
@@ -132,8 +132,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
-    public void loginfragment_act(){
-        Intent intent = new Intent(this, Login.class);
+    public void nowosci(){
+        Intent intent = new Intent(this, nowoscifragment.class);
         startActivity(intent);
     }
 

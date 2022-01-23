@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/tlo"
-    android:id="@+id/oaplikacji">
+    android:id="@+id/nowosci">
 
 
     <TextView
@@ -20,7 +20,12 @@
         android:ems="10"
         android:gravity="start"
         android:inputType="textMultiLine"
-        android:text="Aplikacja została stworzona na potrzeby projektu. Zawiera w sobie między innymi gre logiczną labirynt z funkcją czasu, logowanie przez google oraz narzędzia takie jak barometr, mape, kompas itp."
+        android:text="
+        - Dodanie czasu i punktów do gry labirynt\n
+        - Dodanie narzędzia mapy\n
+        - Ulepszenie menu\n
+        - Poprawienie funkcji logowania\n
+        "
         android:textColor="@color/white"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,15 +36,15 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="207dp"
-        android:layout_height="93dp"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:background="@color/purple_500"
         android:gravity="center"
-        android:text="Aplikacja"
+        android:text="Nowości"
         android:textColor="@color/white"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"

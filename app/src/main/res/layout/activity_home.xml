@@ -38,10 +38,10 @@
         android:orientation="vertical">
 
         <ImageView
-            android:src="@drawable/common_full_open_on_phone"
+            android:id="@+id/picture"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:id="@+id/picture"></ImageView>
+            tools:srcCompat="@tools:sample/avatars"></ImageView>
 
         <TextView
             android:layout_marginTop="20dp"
